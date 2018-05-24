@@ -1,0 +1,89 @@
+/* Map */
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  min-height: 100%;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.content .map {
+  width: 900px;
+  height: 900px;
+  background-color: #EDF1E3;
+  border-style: solid;
+  border-width: 40px;
+  border-color: #2c2c2c;
+}
+/* Tile */
+.eachTile {
+  width: 41px;
+  height: 37.5px;
+  display:inline-block;
+  margin-top: -4px;
+  border-style: solid;
+
+}
+/* Sprites monster 1 */
+.icone-1 {
+  width: 26px;
+    height: 33px;
+    background: url('../../img/monster1.png') 0 0;
+}
+.icone-2 {
+  width: 26px;
+    height: 33px;
+    background: url('../../img/monster1.png') 0px -32px;
+}
+.icone-3 {
+  width: 26px;
+    height: 33px;
+    background: url('../../img/monster1.png') 0px -64px;
+}
+.icone-4 {
+  width: 26px;
+    height: 33px;
+    background: url('../../img/monster1.png') 0px -96px;
+}
+.icone-5 {
+  width: 26px;
+    height: 33px;
+    background: url('../../img/monster1.png') 56px 0px;
+}
+.icone-6 {
+  width: 26px;
+    height: 33px;
+    background: url('../../img/monster1.png') 56px -32px;
+}
+.icone-7 {
+  width: 26px;
+    height: 33px;
+    background: url('../../img/monster1.png') 56px -64px;
+}
+.icone-8 {
+  width: 26px;
+    height: 33px;
+    background: url('../../img/monster1.png') 56px -96px;
+}
+.icone-9 {
+  width: 26px;
+    height: 33px;
+    background: url('../../img/monster1.png') 26px 0;
+}
+.icone-10 {
+  width: 26px;
+    height: 33px;
+    background: url('../../img/monster1.png') 26px -32px;
+}
+.icone-11 {
+  width: 26px;
+    height: 33px;
+    background: url('../../img/monster1.png') 26px -64px;
+}
+.icone-12 {
+  width: 26px;
+    height: 33px;
+    background: url('../../img/monster1.png') 26px -96px;
+}
