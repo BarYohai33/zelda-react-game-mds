@@ -13,8 +13,8 @@ class App extends Component {
 	}
     return (
       <MapGame>
-		{rows}
-		<Monster/>
+		  {rows}
+		  <Monster/>
 		
 
 

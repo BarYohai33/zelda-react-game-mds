@@ -4,4 +4,5 @@ const movePlayer = (x, y) => ({
 	position: 'absolute',
 });
 
+
 export default { movePlayer };

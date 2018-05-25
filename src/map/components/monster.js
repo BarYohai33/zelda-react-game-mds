@@ -32,8 +32,8 @@ class Monster extends Component {
   	this.state = {
   		direction: 'down',
   		posture: 'stay',
-  		posX: 0,
-  		posY: 0,
+  		posX: 310,
+  		posY: 35,
   	};
 
   	this.handleChangeDirection = this.handleChangeDirection.bind(this);
@@ -45,24 +45,25 @@ class Monster extends Component {
   	let posture = '';
   	let posX = this.state.posX;
   	let posY = this.state.posY;
-  	const step = 30;
+  	const stepUpDown = 37.5;
+    const stepRightLeft = 41.5;
 
   	// direction
   	if (key === "ArrowUp") {
   		direction = 'up';
-  		if (this.state.posY !== 0) posY = this.state.posY - step;
+  		if (this.state.posY !== 35) posY = this.state.posY - stepUpDown;
   	}
   	if (key === "ArrowLeft") {
   		direction = 'left';
-  		if (this.state.posX !== 0) posX = this.state.posX - step;
+  		if (this.state.posX !== 310) posX = this.state.posX - stepRightLeft;
   	}
   	if (key === "ArrowRight") {
   		direction = 'right';
-  		if (this.state.posX < window.innerWidth - step*2) posX = this.state.posX + step;
+  		if (this.state.posX < window.innerWidth - 374) posX = this.state.posX + stepRightLeft;
   	}
   	if (key === "ArrowDown") {
   		direction = 'down';
-  		if (this.state.posY < window.innerHeight - step*2) posY = this.state.posY + step;
+  		if (this.state.posY < window.innerHeight - 110) posY = this.state.posY + stepUpDown;
   	}
 
   	// posture
@@ -84,7 +85,7 @@ class Monster extends Component {
         <div
         	className={`icone-${mouvements[direction][posture]}`}
         	style={Style.movePlayer(posX, posY)}
-        	onKeyUp={e => this.handleChangeDirection(e.key)}
+        	onKeyDown={e => this.handleChangeDirection(e.key)}
         	tabIndex="0"
         />
     );
